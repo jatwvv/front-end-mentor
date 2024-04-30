@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: outfit;
+    src: url(fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: youngsirf;
+    src: url(fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+.container {
+    margin:0 80px;
+}
+.cover img {
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+} 
+.container .f-section {
+    padding-top: 15px;
+    padding-bottom: 50px;
+}
+.container .content .f-section  h1 {
+    font-family: youngsirf;
+    font-weight: 200;
+    color: black;
+    font-size: 45px;
+    padding-bottom: 25px;
+}
+.container .content .f-section  p {
+    font-family: outfit;
+    font-size: 18px;
+}
+.container .content .s-section .box{
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    padding: 30px;
+}
+.container .content .s-section h3 {
+    font-size: 30px;
+    font-family: outfit;
+    font-weight: 500;
+    color: hsl(332, 51%, 32%);
+    padding-bottom: 25px;
+}
+.container .content .s-section ul li {
+    padding-left: 95px;
+    list-style-position: inside;
+    font-size: 20px;
+    color: hsl(24, 5%, 18%);
+    font-family: outfit;
+    padding-bottom: 20px;
+}
+.container .content .s-section ul li span {
+    font-weight: 700;
+}
+.container .content .t-section {
+    padding: 50px 0;
+}
+.container .content .t-section h3 {
+    font-size: 40px;
+    font-family: ypungsirf;
+    font-weight: 600;
+    color: hsl(332, 51%, 32%);
+    padding-bottom: 25px;
+}
+.container .content .t-section ul li {
+    padding-left: 95px;
+    list-style-position: inside;
+    font-size: 20px;
+    color: hsl(24, 5%, 18%);
+    font-family: outfit;
+    padding-bottom: 20px;
+}
+.container .content .f-section h3 {
+    font-size: 40px;
+    font-family: ypungsirf;
+    font-weight: 600;
+    color: hsl(332, 51%, 32%);
+    padding: 30px 0;
+}
+.container .content .f-section ul li {
+    padding-left: 65px;
+    list-style: none;
+    font-size: 20px;
+    color: hsl(24, 5%, 18%);
+    font-family: outfit;
+    padding-bottom: 20px;
+    position: relative;
+    counter-increment: css-counter 1;
+}
+.container .content .f-section ul li::before {
+    content: counter(css-counter);
+    position: absolute;
+    left: 25px;
+    color: hsl(332, 51%, 32%);
+    font-weight: bold;
+}
+.container .content .fi-section h3 {
+    font-size: 40px;
+    font-family: ypungsirf;
+    font-weight: 600;
+    color: hsl(332, 51%, 32%);
+    padding: 30px 0;
+}
+.container .content .fi-section  p {
+    font-family: outfit;
+    font-size: 18px;
+}
+.container .content .fi-section ul {
+    padding-bottom: 50px;
+}
+.container .content .fi-section ul li {
+    list-style: none;
+    font-size: 20px;
+    color: hsl(24, 5%, 18%);
+    font-family: outfit;
+    padding: 20px;
+    display: flex;
+    width: 550px;
+    justify-content: space-between;
+}
+.container .content .fi-section ul li .kind {
+    padding-left: 20px;
+}
+.container .content .fi-section ul li .number {
+    color: hsl(332, 51%, 32%);
+    font-weight: bold;
+}
+.attribution {
+    color: hsl(332, 51%, 32%);
+    text-align: center;
+}
+.attribution a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+@media screen and (max-width: 767px) {
+    .container {
+        margin: 24px;
+    }
+    .container .content .fi-section ul li .kind {
+        padding: 0;
+    }
+    .container .content .fi-section ul li {
+        width: 100%;
+    }
+    .container .content .f-section ul li::before {
+    left: 5px;
+    }
+    .container .content .f-section ul li {
+    padding-left: 41px;
+    font-size: 16px;
+    }
+    .container .content .t-section ul li {
+    padding-left: 30px;
+    font-size: 16px;
+    }
+    .container .content .s-section ul li {
+        padding-left: 0;
+        font-size: 16px;
+    }
+    .container .f-section {
+    padding-bottom: 23px;
+    }
+    .container .content .f-section h1 {
+    font-size: 38px;
+    }
+}
